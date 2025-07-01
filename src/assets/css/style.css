@@ -77,13 +77,12 @@ body {
 }
 
 .socials a {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
   gap: 0.5rem; /* Espacio entre icono y texto */
   color: #bac2de;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: color 0.3s;
 }
 
@@ -92,8 +91,9 @@ body {
 }
 
 .social-icon {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
+  font-size: 1.2rem;
 }
 
 /* Responsive */
