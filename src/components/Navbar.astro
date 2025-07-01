@@ -1,0 +1,95 @@
+<!-- Menú / Navbar con íconos -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#home" class="logo">EosOS GNU/Linux</a>
+    <ul class="nav-links">
+      <li>
+        <a href="#home">
+          <!-- Ícono Home -->
+          <svg viewBox="0 0 24 24" fill="currentColor" class="nav-icon">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+          </svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#features">
+          <!-- Ícono Features -->
+          <svg viewBox="0 0 24 24" fill="currentColor" class="nav-icon">
+            <path
+              d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z"
+            ></path>
+          </svg>
+          Requirements
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  /* Navbar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(31, 31, 48, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* ← Nuevo efecto sombra */
+    z-index: 1000;
+  }
+
+  #navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 1.5rem;
+  }
+
+  #navbar .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #bc52ee;
+    text-decoration: none;
+  }
+
+  #navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navbar .nav-links li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  #navbar .nav-links li a:hover {
+    color: #bc52ee;
+  }
+
+  /* Íconos en el navbar */
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* Espacio entre icono y texto */
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  .nav-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-links a:hover {
+    color: #bc52ee;
+  }
+</style>
