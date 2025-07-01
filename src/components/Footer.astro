@@ -1,6 +1,8 @@
 <!-- Footer limpio -->
-<footer id="footer">
-  <div class="container footer-content">
+<footer id="footer" class="bg-[rgba(31,31,48,0.8)] backdrop-blur-md py-8 px-4">
+  <div
+    class="container flex flex-col items-center justify-center footer-content"
+  >
     <div class="socials">
       <!-- Discord -->
       <a
@@ -40,21 +42,18 @@
         GitHub
       </a>
     </div>
+    <div class="footer-bottom">
+      <p class="text-center text-gray-400 text-sm">
+        &copy; 2023 EosOS GNU/Linux. All rights reserved. Powered by EOS Team
+        and <a href="https://vasak.net.ar/">Vasak Group</a>.
+      </p>
+    </div>
   </div>
 </footer>
 
 <style>
   /* Footer */
   #footer {
-    background: rgba(31, 31, 48, 0.8); /* Igual que navbar */
-    backdrop-filter: blur(10px);
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra arriba */
-    padding: 2rem 1rem;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;
   }
 </style>
