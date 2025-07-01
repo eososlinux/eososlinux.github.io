@@ -50,3 +50,85 @@
     gap: 1rem;
   }
 }
+
+#eos-card {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(31, 31, 48, 0.6); /* color oscuro con opacidad */
+  backdrop-filter: blur(15px); /* efecto blur detrás */
+  -webkit-backdrop-filter: blur(15px); /* soporte Safari */
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 1300px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* ← Nuevo efecto sombra */
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.card-image-wrapper {
+  flex: 0 0 65%; /* imagen más grande */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  flex: 1 1 95%;
+  padding: 1rem 0; /* padding vertical para que no quede pegado arriba y abajo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-text h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 35px;
+  color: #e6b2bb;
+}
+
+.card-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+}
+
+.card-text li {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  color: #ddd;
+}
+
+.card-button {
+  display: inline-block;
+  background: #eba0ac;
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background 0.3s;
+  width: fit-content;
+}
+
+.card-button:hover {
+  background: #9a3bcc;
+}
