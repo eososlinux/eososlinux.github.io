@@ -2,6 +2,8 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 
+import image from "../assets/img/download.png";
+
 import "../assets/css/style.css";
 ---
 
@@ -10,7 +12,27 @@ import "../assets/css/style.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" property="og:description"  content="EosOS Linux - Independent distribution based on Arch Linux, easy to use and highly customizable." />
+    <meta name="keywords" content="EosOS, Linux, Arch Linux, customizable, easy to use, open source" />
+    <meta name="author" content="Vasak Group" />
+    <meta name="theme-color" content="#1e1e2d" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="EosOS GMU/Linux" />
+    <meta property="og:image" content={image.src} />
+    <meta property="og:url" content="https://eosos-linux.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EosOS Linux" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EosOS Linux" />
+    <meta name="twitter:description" content="EosOS Linux - Independent distribution based on Arch Linux, easy to use and highly customizable." />
+    <meta name="twitter:image" content={image.src} />
+    <meta name="twitter:site" content="@EosOSLinux" />
+    <meta name="twitter:creator" content="@EosOSLinux" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>EosOS Linux</title>
   </head>
