@@ -5,6 +5,7 @@ body {
   @apply m-0 w-full h-full text-white;
   background: #1e1e2d;
   font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -129,4 +130,8 @@ body {
 
 .card-button:hover {
   background: #9a3bcc;
+}
+
+section {
+  @apply h-screen flex items-center justify-center w-full p-8;
 }
