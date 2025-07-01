@@ -1,5 +1,6 @@
 ---
-import desktopImage from "../assets/EosOS-plasma-descktop.png";
+import desktopImage from "../assets/img/EosOS-plasma-descktop.png";
+import desktopIcon from "../assets/img/pc.png";
 ---
 
 <!-- Sección Home -->
@@ -13,7 +14,7 @@ import desktopImage from "../assets/EosOS-plasma-descktop.png";
   </div>
 </section>
 
-<section id="requirements" class="flex justify-center items-center py-8 px-4">
+<section id="requirements">
   <div
     class="card flex flex-row items-center bg-[rgba(31, 31, 48, 0.6)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl p-8"
   >
@@ -62,21 +63,16 @@ import desktopImage from "../assets/EosOS-plasma-descktop.png";
       </table>
     </div>
     <div class="flex justify-center items-center mt-4">
-      <svg viewBox="0 0 16 16" height="75px" width="75px"
-        ><path
-          d="M1 3C0.447715 3 0 3.44772 0 4C0 4.55228 0.447716 5 1 5H9C9.55228 5 10 4.55228 10 4C10 3.44772 9.55228 3 9 3H1Z"
-        ></path><path
-          d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9H7C7.55228 9 8 8.55228 8 8C8 7.44772 7.55228 7 7 7H1Z"
-        ></path><path
-          d="M0 12C0 11.4477 0.447715 11 1 11H9C9.55228 11 10 11.4477 10 12C10 12.5523 9.55228 13 9 13H1C0.447716 13 0 12.5523 0 12Z"
-        ></path><path
-          d="M15.707 7.20711C16.0975 6.81658 16.0975 6.18342 15.707 5.79289C15.3165 5.40237 14.6833 5.40237 14.2928 5.79289L11.9999 8.08579L11.2115 7.29741C10.821 6.90689 10.1878 6.90689 9.79729 7.29741C9.40676 7.68793 9.40676 8.3211 9.79729 8.71162L11.2928 10.2071C11.6833 10.5976 12.3165 10.5976 12.707 10.2071L15.707 7.20711Z"
-        ></path></svg
-      >
+      <img
+        src={desktopIcon.src}
+        alt="EosOS KDE Desktop"
+        class="card-image w-full h-auto"
+      />
     </div>
   </div>
 </section>
-<section id="dowonload" class="flex justify-center items-center py-8 px-4">
+
+<section id="dowonload" class="flex-col">
   <div
     class="card flex flex-row items-center bg-[rgba(31, 31, 48, 0.6)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl"
   >
@@ -107,6 +103,9 @@ import desktopImage from "../assets/EosOS-plasma-descktop.png";
       </p>
     </div>
   </div>
+  <p class="text-center text-gray-400 mt-4">
+    sha256sum: b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca5287827b6
+  </p>
 </section>
 
 <style>
