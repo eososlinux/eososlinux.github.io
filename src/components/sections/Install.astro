@@ -1,0 +1,28 @@
+---
+import installIcon from "../../assets/img/install.png";
+import bgImage from "../../assets/img/installation.png";
+---
+
+<section id="install" class="bg-no-repeat bg-cover bg-center" style={`background-image: url(${bgImage.src})`}>
+  <div class="card flex flex-row items-center bg-[rgba(30,30,45,0.8)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl p-8">
+    <div class="flex flex-col justify-center items-center content-center text-center">
+      <h2 class="title font-bold">Installation procedure</h2>
+      <img
+        src={installIcon.src}
+        alt="Installation procedure"
+        class="card-image w-full h-auto"
+      />
+    </div>
+    <div class="text-md mb-5 mt-10 flex max-w-[60%]">
+      <div>
+        Boot the PC and press the manufacturer specific key to open your device's setup utility. Common keys used: <kbd>Esc</kbd>, <kbd>Delete</kbd>, <kbd>F1</kbd>, <kbd>F2</kbd>, <kbd>F9</kbd>, <kbd>F10</kbd>, <kbd>F11</kbd>, or <kbd>F12</kbd>.</p>
+        <hr class="my-4">
+        <p>Create a bootable USB using DD/Etcher/Ventoy/Rufus. Ventoy is the easiest method and allows multiple editions on the one USB, while DD/Etcher the most reliable.</p>
+        <hr class="my-4">
+        <p>If your firmware supports UEFI, then configure your device to use UEFI only in its setup utility. UEFI is much preferred over BIOS whenever possible.</p>
+        <hr class="my-4">
+        <p>Boot from the USB drive. When using Ventoy make sure to use the "GRUB2" option in the boot menu. After booting the live media, start the installer and follow the guided installation procedure.</p>
+      </div>
+    </div>
+  </div>
+</section>

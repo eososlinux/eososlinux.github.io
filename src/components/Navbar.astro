@@ -1,0 +1,110 @@
+---
+import logo from "../assets/img/logo2.png";
+---
+<nav
+  id="navbar"
+  class="fixed top-0 w-full bg-[rgba(30,30,45,0.8)] backdrop-blur-md z-50"
+>
+  <div
+    class="flex unwrap align-middle items-center justify-between px-4 py-auto h-14"
+  >
+    <a href="#home" class="logo">
+      <img src={logo.src} alt="EosOS GNU/Linux" class="h-10" />
+    </a>
+    <ul class="nav-links flex items-center gap-4 m-0 p-0">
+
+      <li>
+        <a href="#home">
+          <svg class="nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M11.293 3.293a1 1 0 0 1 1.414 0l6 6 2 2a1 1 0 0 1-1.414 1.414L19 12.414V19a2 2 0 0 1-2 2h-3a1 1 0 0 1-1-1v-3h-2v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2v-6.586l-.293.293a1 1 0 0 1-1.414-1.414l2-2 6-6Z" clip-rule="evenodd"/>
+          </svg>
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="#requirements">
+          <svg class="nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M5 3a2 2 0 0 0-2 2v5h18V5a2 2 0 0 0-2-2H5ZM3 14v-2h18v2a2 2 0 0 1-2 2h-6v3h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3H5a2 2 0 0 1-2-2Z" clip-rule="evenodd"/>
+          </svg>
+          Requirements
+        </a>
+      </li>
+
+      <li>
+        <a href="#download">
+          <svg class="nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd"/>
+          </svg>
+          
+          Download
+        </a>
+      </li>
+
+      <li>
+        <a href="#install">
+          <svg class="nav-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M6 2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 1 0 0-2h-2v-2h2a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2h-8v16h5v2H7a1 1 0 1 1 0-2h1V2H6Z" clip-rule="evenodd"/>
+          </svg>
+          
+          Install
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<style>
+  /* Navbar */
+  #navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #navbar .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #cba6f7;
+    text-decoration: none;
+  }
+
+  #navbar .nav-links {
+    list-style: none;
+  }
+
+  #navbar .nav-links li a {
+    color: #bac2de;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  #navbar .nav-links li a:hover {
+    color: #cba6f7;
+  }
+
+  /* Íconos en el navbar */
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; /* Espacio entre icono y texto */
+    color: #bac2de;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  .nav-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-links a:hover {
+    color: #cba6f7;
+  }
+
+  svg{
+    fill: #fab387
+  }
+</style>
