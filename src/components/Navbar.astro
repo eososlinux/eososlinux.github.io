@@ -1,4 +1,6 @@
-<!-- Menú / Navbar con íconos -->
+---
+import logo from "../assets/img/logo2.png";
+---
 <nav
   id="navbar"
   class="fixed top-0 w-full bg-[rgba(30,30,45,0.8)] backdrop-blur-md z-50"
@@ -6,7 +8,9 @@
   <div
     class="flex unwrap align-middle items-center justify-between px-4 py-auto h-14"
   >
-    <a href="#home" class="logo">EosOS GNU/Linux</a>
+    <a href="#home" class="logo">
+      <img src={logo.src} alt="EosOS GNU/Linux" class="h-10" />
+    </a>
     <ul class="nav-links flex items-center gap-4 m-0 p-0">
 
       <li>
