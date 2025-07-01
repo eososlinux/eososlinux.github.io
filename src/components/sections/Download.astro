@@ -1,5 +1,8 @@
 ---
 import desktopImage from "../../assets/img/EosOS-plasma-descktop.png";
+
+const downloadURL = "https://drive.google.com/file/d/1ReaIxGbM7bUcvPehicN_f72Ygekn0BOQ/view?usp=drive_link";
+const sha256sum = "b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca5287827b6";
 ---
 
 <section id="dowonload" class="flex-col">
@@ -23,7 +26,7 @@ import desktopImage from "../../assets/img/EosOS-plasma-descktop.png";
       </ul>
       <p class="text-center">
         <a
-          href="https://drive.google.com/file/d/1ReaIxGbM7bUcvPehicN_f72Ygekn0BOQ/view?usp=drive_link"
+          href={downloadURL}
           class="card-button"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,6 +37,6 @@ import desktopImage from "../../assets/img/EosOS-plasma-descktop.png";
     </div>
   </div>
   <p class="text-center text-gray-400 mt-4">
-    sha256sum: b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca5287827b6
+    sha256sum: {sha256sum}
   </p>
 </section>
