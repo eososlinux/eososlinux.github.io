@@ -1,8 +1,9 @@
 ---
 import desktopIcon from "../../assets/img/pc.png";
+import neofetchImage from "../../assets/img/neofetch.png";
 ---
 
-<section id="requirements">
+<section id="requirements" class="bg-no-repeat bg-cover bg-center" style={`background-image: url(${neofetchImage.src})`}>
   <div
     class="card flex flex-row items-center bg-[rgba(30,30,45,0.8)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl p-8"
   >
@@ -18,32 +19,32 @@ import desktopIcon from "../../assets/img/pc.png";
         </thead>
         <tbody>
           <tr>
-            <td>Processor</td>
+            <td class="font-bold">Processor</td>
             <td>64-bit</td>
             <td>64-bit</td>
           </tr>
           <tr>
-            <td>RAM</td>
+            <td class="font-bold">RAM</td>
             <td>4 GB</td>
             <td>8 GB</td>
           </tr>
           <tr>
-            <td>Disk Space</td>
+            <td class="font-bold">Disk Space</td>
             <td>80 GB</td>
             <td>120 GB</td>
           </tr>
           <tr>
-            <td>Disk Type</td>
+            <td class="font-bold">Disk Type</td>
             <td>HDD</td>
             <td>SSD</td>
           </tr>
           <tr>
-            <td>Graphics</td>
+            <td class="font-bold">Graphics</td>
             <td>OpenGL 3.0 compatible</td>
             <td>OpenGL 4.5 compatible</td>
           </tr>
           <tr>
-            <td>Network</td>
+            <td class="font-bold">Network</td>
             <td>Internet connection</td>
             <td>Internet connection</td>
           </tr>

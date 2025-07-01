@@ -3,12 +3,13 @@ import Brands from "./sections/Brands.astro";
 import Download from "./sections/Download.astro";
 import Install from "./sections/Install.astro";
 import Requirements from "./sections/Requirements.astro";
+import principalImage from "../assets/img/principal.png";
 ---
 
-<section id="home">
-  <div class="container">
-    <h1 class="font-bold">Welcome to EosOS Linux KDE Lite</h1>
-    <p>
+<section id="home" class="bg-no-repeat bg-cover bg-center" style={`background-image: url(${principalImage.src})`}>
+  <div class="bg-[rgba(30,30,45,0.8)] backdrop-blur-md rounded-2xl p-8 max-w-7xl ">
+    <h1 class="font-bold">Welcome to EosOS Linux</h1>
+    <p class="mb-4">
       Independent distribution based on Arch Linux, easy to use and highly
       customizable.
     </p>
