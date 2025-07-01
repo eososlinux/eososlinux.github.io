@@ -13,24 +13,32 @@ import desktopImage from "../assets/EosOS-plasma-descktop.png";
   </div>
 </section>
 <section id="eos-card">
-  <div class="card">
-    <div class="card-image-wrapper">
-      <img src={desktopImage.src} alt="EosOS KDE Desktop" class="card-image" />
+  <div
+    class="card flex flex-row items-center bg-[rgba(31, 31, 48, 0.6)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl"
+  >
+    <div class="card-image-wrapper flex justify-center items-center">
+      <img
+        src={desktopImage.src}
+        alt="EosOS KDE Desktop"
+        class="card-image rounded-l-2xl w-full h-auto"
+      />
     </div>
 
-    <div class="card-text">
-      <h2>EosOS Linux KDE Lite</h2>
+    <div class="card-text p-8 flex flex-col justify-center align-middle">
+      <h2 class="text-center font-bold">EosOS Linux KDE Lite</h2>
       <ul>
         <li>Independent distribution based on Arch Linux</li>
         <li>Easy to use</li>
         <li>Highly customizable for everyone</li>
       </ul>
-      <a
-        href="https://drive.google.com/file/d/1ReaIxGbM7bUcvPehicN_f72Ygekn0BOQ/view?usp=drive_link"
-        class="card-button"
-      >
-        Download
-      </a>
+      <p class="text-center">
+        <a
+          href="https://drive.google.com/file/d/1ReaIxGbM7bUcvPehicN_f72Ygekn0BOQ/view?usp=drive_link"
+          class="card-button"
+        >
+          Download
+        </a>
+      </p>
     </div>
   </div>
 </section>
