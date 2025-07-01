@@ -87,7 +87,7 @@ body {
 }
 
 .socials a:hover {
-  color: #bc52ee;
+  color: #cba6f7;
 }
 
 .social-icon {
@@ -155,7 +155,7 @@ body {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 35px;
-  color: #e6b2bb;
+  color: #fab387;
 }
 
 .card-text ul {
@@ -173,7 +173,7 @@ body {
 
 .card-button {
   display: inline-block;
-  background: #eba0ac;
+  background: #fab387;
   color: #fff;
   padding: 16px 36px;
   border-radius: 30px;
@@ -185,7 +185,7 @@ body {
 }
 
 .card-button:hover {
-  background: #9a3bcc;
+  background: #cba6f7;
 }
 
 section {
