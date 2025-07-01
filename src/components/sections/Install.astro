@@ -3,46 +3,39 @@ import installIcon from "../../assets/img/install.png";
 ---
 
 <section id="install">
-  <div class="card flex flex-row items-center bg-[rgba(31, 31, 48, 0.6)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl">
-    <div class="flex flex-col justify-center items-center content-center textt-center">
+  <div class="card flex flex-row items-center bg-[rgba(31, 31, 48, 0.6)] backdrop-blur-md rounded-2xl gap-4 w-full max-w-7xl p-8">
+    <div class="flex flex-col justify-center items-center content-center text-center">
       <h2 class="title">Installation procedure</h2>
       <img
         src={installIcon.src}
         alt="Installation procedure"
-        class="card-image rounded-l-2xl w-full h-auto"
+        class="card-image w-full h-auto"
       />
     </div>
-    <div >
+    <div class="text-md mb-5 mt-10 flex max-w-[60%]">
       <div>
-        <div class="text-md mb-5 mt-10 sm:px-10 md:px-24 lg:px-36 flex">
-          <div class="m-auto my-10 md:my-auto">
-            </div>
-            <div class="ml-20">
-              <p>Boot the PC and press the manufacturer specific key to open your device's setup utility. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</p>
-              <a href="https://searx.garudalinux.org/search?q=BIOS%20menu%20key%20brand&amp;categories=general" rel="noopener" target="_blank" class="text-justify text-primary">Find more common keys and buttons <i class="pi pi-external-link" style="font-size: 0.7rem;"></i></a>
-              <hr class="my-4">
-              <p>Disable fastboot and secure boot. It may not be possible to disable the latter explicitly - try clearing the secure boot keys instead. Check the manual of your device/motherboard for further info.</p>
-              <hr class="my-4">
-              <p>Make sure that your device's SATA controller is set to AHCI mode in your device's setup utility - otherwise, the Linux kernel may not be able to detect your drive.</p>
-              <hr class="my-4">
-              <p>If your firmware supports UEFI, then configure your device to use UEFI only in its setup utility. UEFI is much preferred over BIOS whenever possible.</p>
-              <hr class="my-4">
-              <p>Create a bootable USB using DD/Etcher/Ventoy/Rufus. Ventoy is the easiest method and allows multiple editions on the one USB, while DD/Etcher the most reliable.</p>
-              <hr class="my-4">
-              <p>Boot from the USB drive. When using Ventoy make sure to use the "GRUB2" option in the boot menu.</p>
-              <hr class="my-4">
-              <p>After booting the live media, start the installer and follow the guided installation procedure.</p>
-              <hr class="my-4">
-              <p>The login credentials are:</p>
-              <ul class="text-center">
-                <li>Username: <a class="font-mono">garuda</a></li>
-                <li>Password: <a class="font-mono">garuda</a></li>
-              </ul>
-              <hr class="my-4">
-              <p>While the installation is running, please consider reading the following recommendations.</p>
-            </div>
-          </div>
-        </div>
+        <p>Boot the PC and press the manufacturer specific key to open your device's setup utility. Common keys used: Esc, Delete, F1, F2, F9, F10, F11, or F12.</p>
+        <a href="https://searx.garudalinux.org/search?q=BIOS%20menu%20key%20brand&amp;categories=general" rel="noopener" target="_blank" class="text-justify text-primary">Find more common keys and buttons <i class="pi pi-external-link" style="font-size: 0.7rem;"></i></a>
+        <hr class="my-4">
+        <p>Disable fastboot and secure boot. It may not be possible to disable the latter explicitly - try clearing the secure boot keys instead. Check the manual of your device/motherboard for further info.</p>
+        <hr class="my-4">
+        <p>Make sure that your device's SATA controller is set to AHCI mode in your device's setup utility - otherwise, the Linux kernel may not be able to detect your drive.</p>
+        <hr class="my-4">
+        <p>If your firmware supports UEFI, then configure your device to use UEFI only in its setup utility. UEFI is much preferred over BIOS whenever possible.</p>
+        <hr class="my-4">
+        <p>Create a bootable USB using DD/Etcher/Ventoy/Rufus. Ventoy is the easiest method and allows multiple editions on the one USB, while DD/Etcher the most reliable.</p>
+        <hr class="my-4">
+        <p>Boot from the USB drive. When using Ventoy make sure to use the "GRUB2" option in the boot menu.</p>
+        <hr class="my-4">
+        <p>After booting the live media, start the installer and follow the guided installation procedure.</p>
+        <hr class="my-4">
+        <p>The login credentials are:</p>
+        <ul class="text-center">
+          <li>Username: <a class="font-mono">garuda</a></li>
+          <li>Password: <a class="font-mono">garuda</a></li>
+        </ul>
+        <hr class="my-4">
+        <p>While the installation is running, please consider reading the following recommendations.</p>
       </div>
     </div>
   </div>
