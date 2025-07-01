@@ -1,3 +1,18 @@
+@import "tailwindcss";
+
+html,
+body {
+  @apply m-0 w-full h-full text-white;
+  background: #1e1e2d;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .socials {
   display: flex;
   gap: 2rem; /* Espacio entre iconos */
