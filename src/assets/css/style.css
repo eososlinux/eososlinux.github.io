@@ -59,7 +59,6 @@
 html,
 body {
   @apply m-0 w-full h-full text-white ease-in-out transition duration-300;
-  background: #1e1e2d;
   font-family: 'Work Sans', sans-serif;
   scroll-behavior: smooth;
   color: #bac2de;
