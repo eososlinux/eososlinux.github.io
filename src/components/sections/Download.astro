@@ -1,8 +1,10 @@
 ---
 import desktopImage from "../../assets/img/download.png";
 
-const downloadURL = "https://sourceforge.net/projects/eososlinux/files/latest/download";
-const sha256sum = "b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca5287827b6";
+const downloadURL =
+  "https://sourceforge.net/projects/eososlinux/files/latest/download";
+const sha256sum =
+  "b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca5287827b6";
 ---
 
 <section id="download" class="flex-col">
@@ -24,7 +26,7 @@ const sha256sum = "b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca528782
         <li>Easy to use</li>
         <li>Highly customizable for everyone</li>
       </ul>
-      <p class="text-center">
+      <p class="flex flex-col items-center">
         <a
           href={downloadURL}
           class="card-button"
@@ -33,6 +35,26 @@ const sha256sum = "b26bcb72eafd618f748fc49ca3c8b252a8c9a7e7f4538bd958d07ca528782
         >
           Download
         </a>
+        
+        <div
+          class="sf-root inline mt-2 mx-auto"
+          data-id="3890020"
+          data-badge="oss-users-love-us-black"
+          style="width:100px"
+        >
+          <a href="https://sourceforge.net/projects/eososlinux/" target="_blank"
+            >EosOSLinux</a
+          >
+        </div>
+        <script>
+          (function () {
+            var sc = document.createElement("script");
+            sc.async = true;
+            sc.src = "https://b.sf-syn.com/badge_js?sf_id=3890020";
+            var p = document.getElementsByTagName("script")[0];
+            p.parentNode?.insertBefore(sc, p);
+          })();
+        </script>
       </p>
     </div>
   </div>
