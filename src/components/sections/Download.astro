@@ -9,36 +9,34 @@ const sha256sum =
 
 <section id="download" class="flex-col">
   <div
-    class="card flex flex-row items-center bg-[rgba(30,30,45,0.8)] rounded-md gap-4 w-full max-w-7xl"
+    class="card flex flex-row bg-[rgba(30,30,45,0.9)] rounded-md w-full max-w-7xl border-2 [border-color:#fab387] h-[400px] overflow-hidden"
   >
-    <div class="card-image-wrapper flex justify-center items-center">
+    <!-- Imagen alineada al borde izquierdo, superior e inferior -->
+ <div class="h-full w-[110%]">
       <img
         src={desktopImage.src}
         alt="EosOS KDE Desktop"
-        class="card-image rounded-l-md w-full h-auto"
+        class="h-full w-full object-cover rounded-l-md"
       />
     </div>
 
-<div class="card-text p-8 flex flex-col justify-center items-center">
-  <h2 class="text-center font-bold">EosOS Linux KDE Lite</h2>
-  <ul class="text-center list-none p-0 self-center">
-    <li>Independent distribution based on Arch Linux</li>
-    <li>Easy to use</li>
-    <li>Highly customizable for everyone</li>
-  </ul>
-
+    <div class="card-text p-8 flex flex-col justify-center items-center w-[50%]">
+      <h2 class="text-center font-bold text-3xl text-[#fab387]">EosOS Linux KDE Lite</h2>
+      <ul class="text-center list-none p-0 self-center text-white my-2">
+        <li>Independent distribution based on Arch Linux</li>
+        <li>Easy to use</li>
+        <li>Highly customizable for everyone</li>
+      </ul>
 
       <div class="flex flex-row justify-center items-center mt-4">
-        <p class="flex flex-col items-center">
-          <a
-            href={downloadURL}
-            class="card-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download
-          </a>
-        </p>
+        <a
+          href={downloadURL}
+          class="card-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download
+        </a>
         <div
           class="sf-root inline ml-3"
           data-id="3890020"
@@ -61,7 +59,18 @@ const sha256sum =
       </div>
     </div>
   </div>
+
   <p class="text-center text-gray-400 mt-4">
     sha256sum: {sha256sum}
   </p>
+
+  <script>
+    (function () {
+      var sc = document.createElement("script");
+      sc.async = true;
+      sc.src = "https://b.sf-syn.com/badge_js?sf_id=3890020";
+      var p = document.getElementsByTagName("script")[0];
+      p.parentNode?.insertBefore(sc, p);
+    })();
+  </script>
 </section>
