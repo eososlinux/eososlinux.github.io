@@ -4,25 +4,64 @@ import bgImage from "../../assets/img/installation.png";
 ---
 
 <section id="install">
-  <div class="card flex flex-row items-center bg-[rgba(30,30,45,0.8)] rounded-md gap-4 w-full max-w-7xl p-8">
-    <div class="flex flex-col justify-center items-center content-center text-center">
-      <h2 class="title font-bold">Installation procedure</h2>
-      <img
-        src={installIcon.src}
-        alt="Installation procedure"
-        class="card-image w-full h-auto"
-      />
+  <div class="card flex flex-col bg-[rgba(30,30,45,0.9)] rounded-md gap-6 w-full max-w-7xl p-8 border-2 [border-color:#fab387]">
+
+    <!-- Título centrado arriba -->
+    <div class="text-center">
+      <h2 class="title font-bold text-3xl text-[#fab387]">Installation procedure</h2>
     </div>
-    <div class="text-md mb-5 mt-10 flex max-w-[60%]">
-      <div>
-        Boot the PC and press the manufacturer specific key to open your device's setup utility. Common keys used: <kbd>Esc</kbd>, <kbd>Delete</kbd>, <kbd>F1</kbd>, <kbd>F2</kbd>, <kbd>F9</kbd>, <kbd>F10</kbd>, <kbd>F11</kbd>, or <kbd>F12</kbd>.</p>
-        <hr class="my-4">
-        <p>Create a bootable USB using DD/Etcher/Ventoy/Rufus. Ventoy is the easiest method and allows multiple editions on the one USB, while DD/Etcher the most reliable.</p>
-        <hr class="my-4">
-        <p>If your firmware supports UEFI, then configure your device to use UEFI only in its setup utility. UEFI is much preferred over BIOS whenever possible.</p>
-        <hr class="my-4">
-        <p>Boot from the USB drive. When using Ventoy make sure to use the "GRUB2" option in the boot menu. After booting the live media, start the installer and follow the guided installation procedure.</p>
+
+    <!-- Contenido explicativo con íconos -->
+    <div class="text-md text-white max-w-4xl mx-auto leading-relaxed space-y-6">
+
+      <!-- Paso 1: Setup utility -->
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-[#fab387]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19.14 12.936c.036-.3.06-.603.06-.936 0-.333-.024-.636-.06-.936l2.03-1.59a.507.507 0 0 0 .12-.636l-1.92-3.318a.504.504 0 0 0-.612-.228l-2.39.96a7.902 7.902 0 0 0-1.62-.936l-.36-2.52a.505.505 0 0 0-.498-.42h-3.84a.5.5 0 0 0-.498.42l-.36 2.52a7.902 7.902 0 0 0-1.62.936l-2.39-.96a.5.5 0 0 0-.612.228l-1.92 3.318a.5.5 0 0 0 .12.636l2.03 1.59c-.036.3-.06.603-.06.936 0 .333.024.636.06.936l-2.03 1.59a.507.507 0 0 0-.12.636l1.92 3.318a.504.504 0 0 0 .612.228l2.39-.96c.492.384 1.026.702 1.62.936l.36 2.52a.505.505 0 0 0 .498.42h3.84a.5.5 0 0 0 .498-.42l.36-2.52c.594-.234 1.128-.552 1.62-.936l2.39.96a.5.5 0 0 0 .612-.228l1.92-3.318a.5.5 0 0 0-.12-.636l-2.03-1.59ZM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+        </svg>
+        <p>
+          Boot the PC and press the manufacturer specific key to open your device's setup utility.
+          Common keys used: <kbd>Esc</kbd>, <kbd>Delete</kbd>, <kbd>F1</kbd>, <kbd>F2</kbd>,
+          <kbd>F9</kbd>, <kbd>F10</kbd>, <kbd>F11</kbd>, or <kbd>F12</kbd>.
+        </p>
       </div>
+      <hr class="border-[#fab387]">
+
+      <!-- Paso 2: USB -->
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-[#fab387]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 2v2h3v2h-3v2l-4-3 4-3Zm5 9a1 1 0 0 1 1 1v7h2v2H3v-2h2v-5a2 2 0 0 1 2-2h11Zm-2 2H7v5h9v-5Z"/>
+        </svg>
+        <p>
+          Create a bootable USB using DD/Etcher/Ventoy/Rufus. Ventoy is the easiest method and allows
+          multiple editions on the one USB, while DD/Etcher are the most reliable.
+        </p>
+      </div>
+      <hr class="border-[#fab387]">
+
+      <!-- Paso 3: UEFI -->
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-[#fab387]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/>
+        </svg>
+        <p>
+          If your firmware supports UEFI, then configure your device to use <strong>UEFI only</strong> in its setup utility.
+          UEFI is much preferred over BIOS whenever possible.
+        </p>
+      </div>
+      <hr class="border-[#fab387]">
+
+      <!-- Paso 4: Instalar -->
+      <div class="flex items-start gap-4">
+        <svg class="w-6 h-6 mt-1 text-[#fab387]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M5 4h14v2H5V4Zm0 14h14v2H5v-2Zm7-5 5 5h-4v4h-2v-4H7l5-5Z"/>
+        </svg>
+        <p>
+          Boot from the USB drive. When using Ventoy make sure to use the "GRUB2" option in the boot menu.
+          After booting the live media, start the installer and follow the guided installation procedure.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
